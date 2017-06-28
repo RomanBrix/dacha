@@ -1,0 +1,35 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "site of restaurant",
+  "main": "index.js",
+  "author": "RomanBrix",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.4",
+    "file-loader": "^0.11.1",
+    "node-sass": "^4.5.3",
+    "react": "^15.5.4",
+    "react-bootstrap": "^0.31.0",
+    "react-dom": "^15.5.4",
+    "react-google-map": "^3.0.1",
+    "react-google-maps-loader": "^2.0.2",
+    "react-redux": "^5.0.5",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "redux": "^3.7.0",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.1",
+    "url-loader": "^0.5.8"
+  },
+  "scripts": {
+    "webpack": "webpack"
+  }
+}
