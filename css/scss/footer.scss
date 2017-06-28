@@ -1,0 +1,56 @@
+@import "Fonts";
+.Footer{
+  color: white;
+  z-index: 1;
+  position: relative;
+  bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  .Contact {
+    //font-weight: 100;
+    font-family: HelveticaLight;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+    border-right: 1px solid white;
+    margin-right: 10px;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-weight: 400;
+      &:hover {
+        text-decoration: underline white;
+        cursor: pointer;
+      }
+    }
+
+
+
+  }
+  .btn{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(134, 115, 69);
+    border-radius: 4px;
+    cursor: pointer;
+    width: 8em;
+    height: 1.8em;
+    font-size: 1em;
+    //font-weight: 100;
+    font-family: HelveticaLight;
+    text-align: center;
+    transition: .4s;
+  }
+  .btn:hover{
+    background-color: rgb(134, 125, 72);
+
+  }
+}

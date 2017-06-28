@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'HelveticaLight';
+  src: url('../../../public/src/Fonts/helvetica/HelveticaLight/HelveticaLight.ttf');
+}
+@font-face {
+  font-family: 'HelveticaMedium';
+  src: url('../../../public/src/Fonts/helvetica/HelveticaMedium/HelveticaMedium.ttf');
+}
+@font-face {
+  font-family: 'HelveticaBold';
+  src: url('../../../public/src/Fonts/helvetica/HelveticaBold/HelveticaBold.ttf');
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body {
+  overflow: auto;
+  font-family: 'HelveticaLight';
+
+}
+.Carte {
+  margin: 0 0;
+  padding: 0 0;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  width: 100vw;
+  //padding-top: 150px;
+  background-color: #f2f5f6;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .content {
+      width: 80%;
+      background-color: white;
+      box-shadow: 0 1px 10px #c6c7c8;
+      padding: 15px;
+      margin-bottom: 15px;
+      opacity: 0;
+      transition: .3s;
+
+      h1{
+        font-size: 41px;
+      }
+      h1,h3{
+        margin:0;
+        padding:0;
+        font-family: HelveticaBold;
+        color: #8d7443;
+        text-transform: uppercase;
+
+      }
+      h3{
+        padding-left: 3px;
+        margin-bottom: 20px;
+      }
+
+      .buttons{
+        display: flex;
+        flex-direction:row;
+        justify-content: flex-start;
+        .btn{
+          user-select: none;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          height: 30px;
+          border: 1px solid #8d7443;
+          color: #8d7443;
+          margin-right: 15px;
+          display: flex;
+          align-items: center;
+          padding: 0 1.5%;
+          cursor: pointer;
+          transition: .8s;
+          font-family: HelveticaMedium;
+        }
+        .btn_active{
+          background-color: #8d7443;
+          color: white;
+        }
+      }
+
+      .menu_items{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+        flex: 1;
+        .item{
+          width: 450px;
+          height: 135px;
+          margin-bottom: 30px;
+          margin-right: 20px;
+          font-weight: 100;
+          color: #8d7443;
+          .img{
+            float: left;
+            margin-right: 15px;
+          }
+          .info {
+            h4{
+              text-transform: uppercase;
+              font-weight: 100;
+              b{
+                font-family: HelveticaBold;
+              }
+              .price {
+                float: right;
+                margin-right: 10px;
+                font-weight: 700;
+              }
+            }
+
+            p{
+              margin-top: -10px;
+
+            }
+          }
+        }
+      }
+      & > a {
+        text-decoration: none;
+        color: white;
+      }
+      & > a .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: white;
+        padding: 0 2.5%;
+        text-transform: uppercase;
+        background-color: rgb(134, 115, 69);
+        border-radius: 4px;
+        cursor: pointer;
+        width: 13em;
+        left: 50%;
+        margin-left: -6.5em;
+        height: 2.3em;
+        font-size: 1.3em;
+        font-weight: 100;
+        font-family: HelveticaLight;
+        text-align: center;
+        transition: .4s;
+        &:hover{
+          background-color: rgb(134, 125, 72);
+
+        }
+      }
+
+    }
+  }
+}

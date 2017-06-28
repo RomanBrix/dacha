@@ -1,0 +1,122 @@
+@import "Fonts";
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body {
+  overflow: auto;
+  font-family: 'HelveticaLight';
+
+}
+.Services {
+  margin: 0 0;
+  padding: 0 0;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  width: 100vw;
+  //padding-top: 150px;
+  font-family: HelveticaLight;
+  background-color: #f2f5f6;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .content {
+      width: 80%;
+      background-color: white;
+      box-shadow: 0 1px 10px #c6c7c8;
+      padding: 15px;
+      margin-bottom: 15px;
+      opacity: 0;
+      transition: .2s;
+
+      h1 {
+        font-size: 41px;
+        margin-left: 40px;
+      }
+      h1, h3 {
+        //margin: 0;
+        padding: 0;
+        font-family: HelveticaBold;
+        color: #8d7443;
+        text-transform: uppercase;
+
+      }
+      h3 {
+        padding-left: 3px;
+        margin-bottom: 20px;
+      }
+      .items {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .poster {
+          max-width: 260px;
+          min-width: 260px;
+          position: relative;
+          margin-bottom: 20px;
+          .img {
+            margin-bottom: 0;
+            padding: 0;
+            img {
+              width: 100%;
+            }
+          }
+          .title {
+            margin-top: -4px;
+            padding-left: 10px;
+            padding-bottom: 13px;
+            box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.2);
+            h3 {
+              margin: 0 0 10px 0;
+              padding-left: 0;
+              padding-top: 35px;
+              //margin-bottom: 10px;
+              font-size: .99em;
+            }
+            p {
+              padding: 0;
+              margin: 0;
+              line-height: 20px;
+              font-size: 0.8em;
+            }
+            .btn {
+              user-select: none;
+              -webkit-user-select: none;
+              -moz-user-select: none;
+              -ms-user-select: none;
+              cursor: pointer;
+              max-width: 110px;
+              margin-top: 15px;
+              border: 1px solid rgb(134, 115, 69);
+              padding: 8px;
+              text-align: center;
+              max-height: 30px;
+              transition: .2s linear;
+              &:hover{
+                background-color: #8d7343;
+                border-color: white;
+                color: white;
+              }
+            }
+          }
+          .price {
+            position: absolute;
+            right: 0;
+            color: white;
+            top: 50%;
+            margin-top: -5px;
+            padding: 0 20px;
+            font-size: 1.5em;
+            background: #8d7343;
+            font-family: HelveticaBold;
+          }
+        }
+      }
+    }
+  }
+}
