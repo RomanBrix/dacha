@@ -1,6 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
-const NODE_ENV = process.env.NODE_ENV || 'dev'
+const NODE_ENV = process.env.NODE_ENV || 'dev';
 
 module.exports= {
     entry: {
@@ -11,7 +11,10 @@ module.exports= {
         hotel: './hotel.js',
         sauna: './sauna.js',
         fishing: './fishing.js',
-        banquets: './banquets.js'
+        banquets: './banquets.js',
+        'admin/admin': './startAdmin/admin.js',
+        'admin/index': './startAdmin/adminEnter.js',
+        newsAndEvents: './newsAndEvents.js'
     },
     output: {
         path: path.join(__dirname, 'public'),

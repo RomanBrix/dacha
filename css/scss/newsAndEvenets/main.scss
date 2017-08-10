@@ -1,0 +1,120 @@
+@import "Fonts";
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+body {
+  overflow: auto;
+  font-family: 'HelveticaLight';
+
+}
+.News {
+  margin: 0 0;
+  padding: 0 0;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  width: 100vw;
+  //padding-top: 150px;
+  font-family: HelveticaLight;
+  background-color: #f2f5f6;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .content {
+      width: 80%;
+      background-color: white;
+      box-shadow: 0 1px 10px #c6c7c8;
+      padding: 15px;
+      margin-bottom: 15px;
+      opacity: 0;
+      transition: .2s;
+
+      h1 {
+        font-size: 41px;
+        margin-left: 40px;
+      }
+      h1, h3 {
+        //margin: 0;
+        padding: 0;
+        font-family: HelveticaBold;
+        color: #8d7443;
+        text-transform: uppercase;
+
+      }
+      h3 {
+        padding-left: 3px;
+        margin-bottom: 20px;
+      }
+      @media (max-width: 820px) {
+        .both_container {
+          flex-direction: column !important;
+          align-items: center !important;
+          flex-wrap: wrap !important;
+
+          .news_container, .events_container{
+            max-width: 100% !important;
+          }
+          .line{
+            display:none;
+          }
+        }
+      }
+      .both_container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        .news_container, .events_container{
+          max-width: 45%;
+        }
+        .line{
+          min-height: 100%;
+          width: 1px;
+          border-right: 3px solid #f2f5f6;
+          border-left: 3px solid #f2f5f6;
+          border-radius: 15%;
+        }
+
+
+        .news{
+          position: relative;
+          border: 1px solid #17252e;
+          border-radius: 5px;
+          margin: 10px;
+          padding: 10px;
+          box-shadow: 0 0 5px black;
+          transition: .2s;
+          min-width: 250px;
+          //height: 160px;
+          p{
+            line-height: 22px;
+            margin-bottom: 25px;
+          }
+          h2{
+            color: #8d7443;
+            margin-bottom: 0;
+          }
+          h4{
+            margin-top: 6px;
+          }
+          .read{
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            color: #8d7443;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+        }
+      }
+    }
+  }
+}
