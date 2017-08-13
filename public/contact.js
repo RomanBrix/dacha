@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 328);
+/******/ 	return __webpack_require__(__webpack_require__.s = 329);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -23281,7 +23281,7 @@ exports.default = App;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(346);
+var content = __webpack_require__(347);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -23677,7 +23677,8 @@ exports.default = Map;
 /* 325 */,
 /* 326 */,
 /* 327 */,
-/* 328 */
+/* 328 */,
+/* 329 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23703,7 +23704,6 @@ var init = document.getElementById('mountNode');
 (0, _reactDom.render)(_react2.default.createElement(_contact2.default, null), init);
 
 /***/ }),
-/* 329 */,
 /* 330 */,
 /* 331 */,
 /* 332 */,
@@ -23720,7 +23720,8 @@ var init = document.getElementById('mountNode');
 /* 343 */,
 /* 344 */,
 /* 345 */,
-/* 346 */
+/* 346 */,
+/* 347 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);

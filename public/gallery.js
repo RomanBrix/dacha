@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 330);
+/******/ 	return __webpack_require__(__webpack_require__.s = 331);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -27760,7 +27760,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(348);
+var content = __webpack_require__(349);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -27898,7 +27898,7 @@ var _Albums = __webpack_require__(318);
 
 var _Albums2 = _interopRequireDefault(_Albums);
 
-var _Photos = __webpack_require__(359);
+var _Photos = __webpack_require__(320);
 
 var _Photos2 = _interopRequireDefault(_Photos);
 
@@ -27957,7 +27957,8 @@ var App = function (_Component) {
     }, {
         key: 'sortRule',
         value: function sortRule(a, b) {
-            return +a.id < +b.id ? 1 : -1;
+            // console.log(a,b);
+            return +a < +b ? 1 : -1;
         }
     }, {
         key: 'render',
@@ -28024,102 +28025,7 @@ var App = function (_Component) {
 exports.default = App;
 
 /***/ }),
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */,
-/* 328 */,
-/* 329 */,
-/* 330 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var _react = __webpack_require__(10);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(89);
-
-var _reactRedux = __webpack_require__(93);
-
-var _redux = __webpack_require__(59);
-
-var _reduxThunk = __webpack_require__(249);
-
-var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
-
-var _reducers = __webpack_require__(204);
-
-var _reducers2 = _interopRequireDefault(_reducers);
-
-var _gallery = __webpack_require__(285);
-
-var _gallery2 = _interopRequireDefault(_gallery);
-
-var _main = __webpack_require__(296);
-
-var _main2 = _interopRequireDefault(_main);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var init = document.getElementById('mountNode');
-var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddleware)(_reduxThunk2.default));
-
-(0, _reactDom.render)(_react2.default.createElement(
-    _reactRedux.Provider,
-    { store: store },
-    _react2.default.createElement(_gallery2.default, null)
-), init);
-
-/***/ }),
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */,
-/* 340 */,
-/* 341 */,
-/* 342 */,
-/* 343 */,
-/* 344 */,
-/* 345 */,
-/* 346 */,
-/* 347 */,
-/* 348 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(34)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, "@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(36) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(56) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(55) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(57) + "); }\n\nhtml, body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nbody {\n  overflow: auto;\n  font-family: 'HelveticaLight'; }\n\n.Gallery {\n  margin: 0 0;\n  padding: 0 0;\n  max-width: 100%;\n  max-height: 100%;\n  min-height: 100%;\n  min-width: 100%;\n  width: 100vw;\n  font-family: HelveticaLight;\n  background-color: #f2f5f6; }\n  .Gallery .container {\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .Gallery .container .content {\n      width: 80%;\n      background-color: white;\n      box-shadow: 0 1px 10px #c6c7c8;\n      padding: 15px;\n      margin-bottom: 15px;\n      opacity: 0;\n      transition: .2s; }\n      .Gallery .container .content h1 {\n        font-size: 41px;\n        margin-left: 40px; }\n      .Gallery .container .content h1, .Gallery .container .content h3 {\n        padding: 0;\n        font-family: HelveticaBold;\n        color: #8d7443;\n        text-transform: uppercase; }\n      .Gallery .container .content h3 {\n        padding-left: 3px;\n        margin-bottom: 20px; }\n      .Gallery .container .content .profiles {\n        display: flex;\n        justify-content: space-around;\n        flex-wrap: wrap; }\n        .Gallery .container .content .profiles .profile {\n          cursor: pointer;\n          margin: 0 4px;\n          min-width: 250px;\n          height: 250px;\n          text-align: center;\n          margin-bottom: 30px;\n          box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.2);\n          transition: .2s;\n          display: flex;\n          flex-direction: column;\n          justify-content: flex-end;\n          align-items: stretch;\n          background-repeat: no-repeat;\n          background-size: cover; }\n          .Gallery .container .content .profiles .profile p {\n            background: rgba(242, 245, 246, 0.6);\n            color: #867345;\n            padding: 5px 0 0 0;\n            font-family: HelveticaBold; }\n          .Gallery .container .content .profiles .profile:hover {\n            box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.2); }\n        .Gallery .container .content .profiles .back {\n          user-select: none;\n          -webkit-user-select: none;\n          -moz-user-select: none;\n          -ms-user-select: none;\n          color: black;\n          border: 1px solid #867345;\n          cursor: pointer;\n          max-width: 70px;\n          text-align: center;\n          padding: 4px 1%;\n          padding-top: 8px;\n          position: absolute;\n          left: 15px;\n          transition: .2s linear; }\n          .Gallery .container .content .profiles .back:hover {\n            color: white;\n            background-color: #8d7343; }\n        .Gallery .container .content .profiles .profile_photo img {\n          max-height: 150px;\n          min-width: 220px;\n          margin: 0 4px 20px 4px;\n          border: 2px solid #f2f5f6;\n          box-shadow: 0 0 10px 2px #dadada;\n          transition: .3s; }\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 349 */,
-/* 350 */,
-/* 351 */,
-/* 352 */,
-/* 353 */,
-/* 354 */,
-/* 355 */,
-/* 356 */,
-/* 357 */,
-/* 358 */,
-/* 359 */
+/* 320 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28171,6 +28077,91 @@ var Photos = function (_Component) {
 }(_react.Component);
 
 exports.default = Photos;
+
+/***/ }),
+/* 321 */,
+/* 322 */,
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _react = __webpack_require__(10);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(89);
+
+var _reactRedux = __webpack_require__(93);
+
+var _redux = __webpack_require__(59);
+
+var _reduxThunk = __webpack_require__(249);
+
+var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
+
+var _reducers = __webpack_require__(204);
+
+var _reducers2 = _interopRequireDefault(_reducers);
+
+var _gallery = __webpack_require__(285);
+
+var _gallery2 = _interopRequireDefault(_gallery);
+
+var _main = __webpack_require__(296);
+
+var _main2 = _interopRequireDefault(_main);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var init = document.getElementById('mountNode');
+var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddleware)(_reduxThunk2.default));
+
+(0, _reactDom.render)(_react2.default.createElement(
+    _reactRedux.Provider,
+    { store: store },
+    _react2.default.createElement(_gallery2.default, null)
+), init);
+
+/***/ }),
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */,
+/* 341 */,
+/* 342 */,
+/* 343 */,
+/* 344 */,
+/* 345 */,
+/* 346 */,
+/* 347 */,
+/* 348 */,
+/* 349 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(34)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "@font-face {\n  font-family: 'HelveticaLight';\n  src: url(" + __webpack_require__(36) + "); }\n\n@font-face {\n  font-family: 'HelveticaBlack';\n  src: url(" + __webpack_require__(56) + "); }\n\n@font-face {\n  font-family: 'HelveticaBold';\n  src: url(" + __webpack_require__(55) + "); }\n\n@font-face {\n  font-family: 'HelveticaHeavy';\n  src: url(" + __webpack_require__(57) + "); }\n\nhtml, body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nbody {\n  overflow: auto;\n  font-family: 'HelveticaLight'; }\n\n.Gallery {\n  margin: 0 0;\n  padding: 0 0;\n  max-width: 100%;\n  max-height: 100%;\n  min-height: 100%;\n  min-width: 100%;\n  width: 100vw;\n  font-family: HelveticaLight;\n  background-color: #f2f5f6; }\n  .Gallery .container {\n    display: flex;\n    flex-direction: column;\n    align-items: center; }\n    .Gallery .container .content {\n      width: 80%;\n      background-color: white;\n      box-shadow: 0 1px 10px #c6c7c8;\n      padding: 15px;\n      margin-bottom: 15px;\n      opacity: 0;\n      transition: .2s; }\n      .Gallery .container .content h1 {\n        font-size: 41px;\n        margin-left: 40px; }\n      .Gallery .container .content h1, .Gallery .container .content h3 {\n        padding: 0;\n        font-family: HelveticaBold;\n        color: #8d7443;\n        text-transform: uppercase; }\n      .Gallery .container .content h3 {\n        padding-left: 3px;\n        margin-bottom: 20px; }\n      .Gallery .container .content .profiles {\n        display: flex;\n        justify-content: space-around;\n        flex-wrap: wrap; }\n        .Gallery .container .content .profiles .profile {\n          cursor: pointer;\n          margin: 0 4px;\n          min-width: 250px;\n          height: 250px;\n          text-align: center;\n          margin-bottom: 30px;\n          box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.2);\n          transition: .2s;\n          display: flex;\n          flex-direction: column;\n          justify-content: flex-end;\n          align-items: stretch;\n          background-repeat: no-repeat;\n          background-size: cover; }\n          .Gallery .container .content .profiles .profile p {\n            background: rgba(242, 245, 246, 0.6);\n            color: #867345;\n            padding: 5px 0 0 0;\n            font-family: HelveticaBold; }\n          .Gallery .container .content .profiles .profile:hover {\n            box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.2); }\n        .Gallery .container .content .profiles .back {\n          user-select: none;\n          -webkit-user-select: none;\n          -moz-user-select: none;\n          -ms-user-select: none;\n          color: black;\n          border: 1px solid #867345;\n          cursor: pointer;\n          max-width: 70px;\n          text-align: center;\n          padding: 4px 1%;\n          padding-top: 8px;\n          position: absolute;\n          left: 15px;\n          transition: .2s linear; }\n          .Gallery .container .content .profiles .back:hover {\n            color: white;\n            background-color: #8d7343; }\n        .Gallery .container .content .profiles .profile_photo img {\n          max-height: 150px;\n          min-width: 220px;\n          margin: 0 4px 20px 4px;\n          border: 2px solid #f2f5f6;\n          box-shadow: 0 0 10px 2px #dadada;\n          transition: .3s; }\n", ""]);
+
+// exports
+
 
 /***/ })
 /******/ ]);

@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 338);
+/******/ 	return __webpack_require__(__webpack_require__.s = 339);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -27132,7 +27132,7 @@ function isSlowBuffer (obj) {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(344);
+var content = __webpack_require__(345);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -27174,7 +27174,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = __webpack_require__(93);
 
-var _adminActions = __webpack_require__(335);
+var _adminActions = __webpack_require__(336);
 
 var _App = __webpack_require__(303);
 
@@ -27236,7 +27236,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Header = __webpack_require__(333);
+var _Header = __webpack_require__(334);
 
 var _Header2 = _interopRequireDefault(_Header);
 
@@ -28275,7 +28275,7 @@ var _photos = __webpack_require__(312);
 
 var _photos2 = _interopRequireDefault(_photos);
 
-var _main = __webpack_require__(354);
+var _main = __webpack_require__(355);
 
 var _main2 = _interopRequireDefault(_main);
 
@@ -28617,7 +28617,8 @@ exports.default = Photos;
 /* 330 */,
 /* 331 */,
 /* 332 */,
-/* 333 */
+/* 333 */,
+/* 334 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28633,7 +28634,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _header = __webpack_require__(356);
+var _header = __webpack_require__(357);
 
 var _header2 = _interopRequireDefault(_header);
 
@@ -28758,8 +28759,8 @@ var Header = function (_Component) {
 exports.default = Header;
 
 /***/ }),
-/* 334 */,
-/* 335 */
+/* 335 */,
+/* 336 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28913,9 +28914,9 @@ function uploadPhoto(data) {
 }
 
 /***/ }),
-/* 336 */,
 /* 337 */,
-/* 338 */
+/* 338 */,
+/* 339 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28955,11 +28956,11 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 ), init);
 
 /***/ }),
-/* 339 */,
 /* 340 */,
 /* 341 */,
 /* 342 */,
-/* 343 */
+/* 343 */,
+/* 344 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);
@@ -28973,7 +28974,7 @@ exports.push([module.i, "@font-face {\n  font-family: 'HelveticaLight';\n  src: 
 
 
 /***/ }),
-/* 344 */
+/* 345 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);
@@ -28987,11 +28988,11 @@ exports.push([module.i, "@font-face {\n  font-family: 'HelveticaLight';\n  src: 
 
 
 /***/ }),
-/* 345 */,
 /* 346 */,
 /* 347 */,
 /* 348 */,
-/* 349 */
+/* 349 */,
+/* 350 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);
@@ -29005,17 +29006,17 @@ exports.push([module.i, "@font-face {\n  font-family: 'HelveticaLight';\n  src: 
 
 
 /***/ }),
-/* 350 */,
 /* 351 */,
 /* 352 */,
 /* 353 */,
-/* 354 */
+/* 354 */,
+/* 355 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(343);
+var content = __webpack_require__(344);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -29040,14 +29041,14 @@ if(false) {
 }
 
 /***/ }),
-/* 355 */,
-/* 356 */
+/* 356 */,
+/* 357 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(349);
+var content = __webpack_require__(350);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;

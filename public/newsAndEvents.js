@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 334);
+/******/ 	return __webpack_require__(__webpack_require__.s = 335);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -27731,7 +27731,7 @@ var _reactRedux = __webpack_require__(93);
 
 var _frontActions = __webpack_require__(277);
 
-var _App = __webpack_require__(323);
+var _App = __webpack_require__(324);
 
 var _App2 = _interopRequireDefault(_App);
 
@@ -27762,7 +27762,7 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(352);
+var content = __webpack_require__(353);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -27811,7 +27811,8 @@ if(false) {
 /* 320 */,
 /* 321 */,
 /* 322 */,
-/* 323 */
+/* 323 */,
+/* 324 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27835,11 +27836,11 @@ var _Footer = __webpack_require__(206);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
-var _news = __webpack_require__(327);
+var _news = __webpack_require__(328);
 
 var _news2 = _interopRequireDefault(_news);
 
-var _events = __webpack_require__(325);
+var _events = __webpack_require__(326);
 
 var _events2 = _interopRequireDefault(_events);
 
@@ -27907,7 +27908,7 @@ var App = function (_Component) {
 exports.default = App;
 
 /***/ }),
-/* 324 */
+/* 325 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28013,7 +28014,7 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 325 */
+/* 326 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28029,7 +28030,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Container = __webpack_require__(324);
+var _Container = __webpack_require__(325);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -28087,7 +28088,7 @@ var Events = function (_Component) {
 exports.default = Events;
 
 /***/ }),
-/* 326 */
+/* 327 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28193,7 +28194,7 @@ var Container = function (_Component) {
 exports.default = Container;
 
 /***/ }),
-/* 327 */
+/* 328 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28209,7 +28210,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Container = __webpack_require__(326);
+var _Container = __webpack_require__(327);
 
 var _Container2 = _interopRequireDefault(_Container);
 
@@ -28262,13 +28263,13 @@ var News = function (_Component) {
 exports.default = News;
 
 /***/ }),
-/* 328 */,
 /* 329 */,
 /* 330 */,
 /* 331 */,
 /* 332 */,
 /* 333 */,
-/* 334 */
+/* 334 */,
+/* 335 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -28312,7 +28313,6 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 ), init);
 
 /***/ }),
-/* 335 */,
 /* 336 */,
 /* 337 */,
 /* 338 */,
@@ -28329,7 +28329,8 @@ var store = (0, _redux.createStore)(_reducers2.default, (0, _redux.applyMiddlewa
 /* 349 */,
 /* 350 */,
 /* 351 */,
-/* 352 */
+/* 352 */,
+/* 353 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);

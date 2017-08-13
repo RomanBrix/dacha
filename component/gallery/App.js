@@ -37,7 +37,8 @@ export default class App extends Component {
     }
 
     sortRule(a,b){
-        return +a.id < +b.id ? 1 : -1;
+        // console.log(a,b);
+        return +a < +b ? 1 : -1;
     }
 
     render(){

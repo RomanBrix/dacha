@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 332);
+/******/ 	return __webpack_require__(__webpack_require__.s = 333);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -22939,15 +22939,15 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Menu = __webpack_require__(322);
+var _Menu = __webpack_require__(323);
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-var _Introduction = __webpack_require__(321);
+var _Introduction = __webpack_require__(322);
 
 var _Introduction2 = _interopRequireDefault(_Introduction);
 
-var _Footer = __webpack_require__(320);
+var _Footer = __webpack_require__(321);
 
 var _Footer2 = _interopRequireDefault(_Footer);
 
@@ -23024,7 +23024,7 @@ exports.default = App;
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(350);
+var content = __webpack_require__(351);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -23071,7 +23071,8 @@ if(false) {
 /* 317 */,
 /* 318 */,
 /* 319 */,
-/* 320 */
+/* 320 */,
+/* 321 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23087,7 +23088,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _footer = __webpack_require__(355);
+var _footer = __webpack_require__(356);
 
 var _footer2 = _interopRequireDefault(_footer);
 
@@ -23172,7 +23173,7 @@ var Footer = function (_Component) {
 exports.default = Footer;
 
 /***/ }),
-/* 321 */
+/* 322 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23188,7 +23189,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Introduction = __webpack_require__(353);
+var _Introduction = __webpack_require__(354);
 
 var _Introduction2 = _interopRequireDefault(_Introduction);
 
@@ -23262,7 +23263,7 @@ var Introduction = function (_Component) {
 exports.default = Introduction;
 
 /***/ }),
-/* 322 */
+/* 323 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23278,7 +23279,7 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _menu = __webpack_require__(357);
+var _menu = __webpack_require__(358);
 
 var _menu2 = _interopRequireDefault(_menu);
 
@@ -23355,7 +23356,6 @@ var Menu = function (_Component) {
 exports.default = Menu;
 
 /***/ }),
-/* 323 */,
 /* 324 */,
 /* 325 */,
 /* 326 */,
@@ -23364,7 +23364,8 @@ exports.default = Menu;
 /* 329 */,
 /* 330 */,
 /* 331 */,
-/* 332 */
+/* 332 */,
+/* 333 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23390,14 +23391,14 @@ var init = document.getElementById('mountNode');
 (0, _reactDom.render)(_react2.default.createElement(_main2.default, null), init);
 
 /***/ }),
-/* 333 */,
 /* 334 */,
 /* 335 */,
 /* 336 */,
 /* 337 */,
 /* 338 */,
 /* 339 */,
-/* 340 */
+/* 340 */,
+/* 341 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);
@@ -23411,13 +23412,13 @@ exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" +
 
 
 /***/ }),
-/* 341 */,
 /* 342 */,
 /* 343 */,
 /* 344 */,
 /* 345 */,
 /* 346 */,
-/* 347 */
+/* 347 */,
+/* 348 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);
@@ -23431,9 +23432,9 @@ exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" +
 
 
 /***/ }),
-/* 348 */,
 /* 349 */,
-/* 350 */
+/* 350 */,
+/* 351 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);
@@ -23441,13 +23442,13 @@ exports = module.exports = __webpack_require__(34)(undefined);
 
 
 // module
-exports.push([module.i, "html, body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nbody {\n  overflow: auto; }\n\n.Main {\n  background-image: url(" + __webpack_require__(358) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-attachment: fixed;\n  margin: 0 0;\n  padding: 0 0;\n  max-width: 100%;\n  max-height: 100%;\n  width: 100vw;\n  height: 100vh;\n  opacity: 0;\n  -webkit-transition: .2s;\n  -moz-transition: .2s;\n  -ms-transition: .2s;\n  -o-transition: .2s;\n  transition: .2s; }\n  .Main .Main_layer {\n    background-color: rgba(39, 34, 32, 0.651);\n    margin: 0 0;\n    padding: 0 0;\n    max-width: 100%;\n    max-height: 100%;\n    width: 100vw;\n    height: 100vh; }\n    .Main .Main_layer .shadow {\n      position: absolute;\n      top: 0;\n      left: 0;\n      right: 0;\n      z-index: 0; }\n    .Main .Main_layer .content {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      height: 100%; }\n", ""]);
+exports.push([module.i, "html, body {\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow: hidden; }\n\nbody {\n  overflow: auto; }\n\n.Main {\n  background-image: url(" + __webpack_require__(359) + ");\n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center center;\n  background-attachment: fixed;\n  margin: 0 0;\n  padding: 0 0;\n  max-width: 100%;\n  max-height: 100%;\n  width: 100vw;\n  height: 100vh;\n  opacity: 0;\n  -webkit-transition: .2s;\n  -moz-transition: .2s;\n  -ms-transition: .2s;\n  -o-transition: .2s;\n  transition: .2s; }\n  .Main .Main_layer {\n    background-color: rgba(39, 34, 32, 0.651);\n    margin: 0 0;\n    padding: 0 0;\n    max-width: 100%;\n    max-height: 100%;\n    width: 100vw;\n    height: 100vh; }\n    .Main .Main_layer .shadow {\n      position: absolute;\n      top: 0;\n      left: 0;\n      right: 0;\n      z-index: 0; }\n    .Main .Main_layer .content {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      height: 100%; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 351 */
+/* 352 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(34)(undefined);
@@ -23461,14 +23462,14 @@ exports.push([module.i, "@font-face {\n  font-family: 'Brusher';\n  src: url(" +
 
 
 /***/ }),
-/* 352 */,
-/* 353 */
+/* 353 */,
+/* 354 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(340);
+var content = __webpack_require__(341);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -23493,14 +23494,14 @@ if(false) {
 }
 
 /***/ }),
-/* 354 */,
-/* 355 */
+/* 355 */,
+/* 356 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(347);
+var content = __webpack_require__(348);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -23525,14 +23526,14 @@ if(false) {
 }
 
 /***/ }),
-/* 356 */,
-/* 357 */
+/* 357 */,
+/* 358 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(351);
+var content = __webpack_require__(352);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -23557,7 +23558,7 @@ if(false) {
 }
 
 /***/ }),
-/* 358 */
+/* 359 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "3fc17a96041207d724b0b45ffe6b4aa6.png";
