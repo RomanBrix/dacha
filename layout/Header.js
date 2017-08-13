@@ -3,8 +3,8 @@ import css from '../css/scss/layout/header.scss';
 
 export default class Header extends Component {
     componentDidMount(){
-        const {main, about, carte, services, contact, news} = this.props;
-        const arr = [main, about, carte, services, contact, news];
+        const {main, about, carte, services, contact, news,gallery} = this.props;
+        const arr = [main, about, carte, services, contact, news,gallery];
         let ask = 0;
         for (let i = 0; i < arr.length; i++){
             if(arr[i] === true ){
@@ -24,19 +24,23 @@ export default class Header extends Component {
                 break;
             case 2:
                 header.classList.add('header_carte');
-                listArray[3].classList.add('active');
+                listArray[4].classList.add('active');
                 break;
             case 3:
                 header.classList.add('header_services');
-                listArray[4].children[0].classList.add('active');
+                listArray[5].children[0].classList.add('active');
                 break;
             case 4:
                 header.classList.add('header_contact');
-                listArray[5].classList.add('active');
+                listArray[6].classList.add('active');
                 break;
             case 5:
                 header.classList.add('header_news');
                 listArray[2].classList.add('active');
+                break;
+            case 6:
+                header.classList.add('header_gallery');
+                listArray[3].classList.add('active');
                 break;
 
             default : console.log('op'); break;
@@ -52,6 +56,7 @@ export default class Header extends Component {
                     <li><a href="index.html">ГЛАВНАЯ</a></li>
                     <li><a href="about.html">О НАС</a></li>
                     <li><a href="news.html">НОВОСТИ</a></li>
+                    <li><a href="gallery.html">ГАЛЕРЕЯ</a></li>
                     <li><a href="carte.html">МЕНЮ</a></li>
                     <li className="dropdown">
                         <span><a href="hotel.html">УСЛУГИ </a></span><img src={src} alt="down"/>

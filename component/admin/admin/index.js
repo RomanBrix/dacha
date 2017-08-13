@@ -8,7 +8,8 @@ import {
     getNews,
     addNews,
     updateNews,
-    loginCheck
+    loginCheck,
+    uploadPhoto
 } from '../../../redux/admin/admin-actions.js';
 import App from './App';
 
@@ -26,5 +27,6 @@ export default connect(
         getNews,
         addNews,
         updateNews,
-        loginCheck
+        loginCheck,
+        uploadPhoto
     })(App);

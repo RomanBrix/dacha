@@ -60,7 +60,7 @@ export default class Photos extends Component {
     }
 
     render(){
-        const {album_name, toggleChange, images, id} = this.props;
+        const {album_name, toggleChange, images, id, uploadPhoto} = this.props;
         const { add, selected } = this.state;
 
         const img = images.map((item, index)=>{

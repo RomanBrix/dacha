@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import {
-    getNews,
+    getAlbumsAndImages,
 } from '../../redux/front/front-actions.js';
 import App from './App';
 
@@ -12,5 +12,5 @@ const mapStateToProps = ( state ) => {
 export default connect(
     mapStateToProps,
     {
-        getNews,
+        getAlbumsAndImages,
     })(App);

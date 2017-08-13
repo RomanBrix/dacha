@@ -130,3 +130,16 @@ export function loginCheck (kind="zero", log = '0', pass = '0') {
             });
     }
 }
+
+export function uploadPhoto (data) {
+        let dat = new FormData(data);
+    return dispatch =>{
+        axios.post('http://localhost:8888/public/admin/upload.php',{ dat })
+            .then(function(res) {
+                console.log(res);
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    }
+}

@@ -14,7 +14,8 @@ module.exports= {
         banquets: './banquets.js',
         'admin/admin': './startAdmin/admin.js',
         'admin/index': './startAdmin/adminEnter.js',
-        newsAndEvents: './newsAndEvents.js'
+        newsAndEvents: './newsAndEvents.js',
+        gallery: './gallery.js'
     },
     output: {
         path: path.join(__dirname, 'public'),

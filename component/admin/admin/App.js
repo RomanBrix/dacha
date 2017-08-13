@@ -45,6 +45,7 @@ export default class App extends Component {
             request ,
             addNews  ,
             updateNews,
+            uploadPhoto,
         } = this.props;
         const { change } = this.state;
         const out =[
@@ -56,6 +57,7 @@ export default class App extends Component {
                 getImages={ getImages }
                 images={ images }
                 onDelete={ onDelete }
+                uploadPhoto={ uploadPhoto }
             />,
             <Events
                 events={ events }

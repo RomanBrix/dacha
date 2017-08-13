@@ -22,7 +22,16 @@ export default class App extends Component {
         })
     }
     render(){
-        const { getAlbums, addNewAlbum, getImages, onDelete, albums, images, request, } = this.props;
+        const { 
+            getAlbums, 
+            addNewAlbum, 
+            getImages, 
+            onDelete, 
+            albums, 
+            images, 
+            request, 
+            uploadPhoto
+        } = this.props;
         const { change, id, album_name } = this.state;
         return (
             <div className="container">
@@ -48,6 +57,7 @@ export default class App extends Component {
                                     getImages={ getImages }
                                     images={ images }
                                     onDelete={ onDelete }
+                                    uploadPhoto={ uploadPhoto }
 
                                 />
                 }

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Header from '../../layout/Header';
+import Footer from '../../layout/Footer';
 import News from './news';
 import Events from './events';
 
@@ -29,6 +30,7 @@ export default class App extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         )
     }

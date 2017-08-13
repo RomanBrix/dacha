@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import reducers from './redux/reducers';
 import  App from './component/gallery';
-// import css from './css/scss/newsAndEvenets/main.scss';
+import css from './css/scss/gallery/main.scss';
 
 
 const init = document.getElementById('mountNode');
